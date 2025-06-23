@@ -7,158 +7,318 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
+            padding: 40px 20px;
+            line-height: 1.7;
             color: #333;
+            background: #f8f9fa;
         }
-        h1 { color: #1a73e8; }
-        h2 { color: #444; margin-top: 30px; }
-        .highlight { background: #fff3cd; padding: 10px; border-radius: 5px; margin: 20px 0; }
-        .contact { background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        h1 { 
+            color: #1a73e8; 
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 15px;
+        }
+        
+        h2 { 
+            color: #2c3e50; 
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-left: 4px solid #1a73e8;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .meta {
+            background: #e8f4fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #1a73e8;
+            font-size: 0.95em;
+        }
+        
+        .highlight { 
+            background: #fff3cd; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin: 25px 0;
+            border-left: 4px solid #ffc107;
+            font-weight: 500;
+        }
+        
+        .contact { 
+            background: #e3f2fd; 
+            padding: 25px; 
+            border-radius: 8px; 
+            margin: 25px 0;
+            border-left: 4px solid #1a73e8;
+        }
+        
+        .limited-use {
+            background: #d4edda;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #28a745;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+        
+        .do-not {
+            background: #f8d7da;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #dc3545;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+        
+        code {
+            background: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 2px solid #e9ecef;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            body {
+                padding: 20px 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    # Privacy Policy - Drive Folder Size Extension
+    <div class="container">
+        <h1>Privacy Policy - Drive Folder Size Extension</h1>
+        
+        <div class="meta">
+            <strong>Last Updated:</strong> January 24, 2025<br>
+            <strong>Version:</strong> 1.0
+        </div>
 
-**Last Updated:** January 24, 2025  
-**Version:** 1.0
+        <h2>Overview</h2>
+        <p>Drive Folder Size Extension ("we," "our," or "the extension") is a Chrome browser extension that calculates and displays the size of folders in Google Drive. This Privacy Policy explains how we collect, use, and protect your information when you use our extension.</p>
 
-## Overview
+        <h2>Data We Collect</h2>
+        
+        <h3>Google Drive Data</h3>
+        <ul>
+            <li><strong>Folder IDs:</strong> Unique identifiers of folders in your Google Drive</li>
+            <li><strong>File metadata:</strong> File sizes, folder structure information</li>
+            <li><strong>Authentication tokens:</strong> Temporary access tokens to communicate with Google Drive API</li>
+        </ul>
 
-Drive Folder Size Extension ("we," "our," or "the extension") is a Chrome browser extension that calculates and displays the size of folders in Google Drive. This Privacy Policy explains how we collect, use, and protect your information when you use our extension.
+        <h3>Local Storage Data</h3>
+        <ul>
+            <li><strong>Calculated folder sizes:</strong> Cached results to improve performance</li>
+            <li><strong>User preferences:</strong> Extension settings and configuration</li>
+            <li><strong>Session data:</strong> Temporary data during active use</li>
+        </ul>
 
-## Data We Collect
+        <h2>How We Use Your Data</h2>
+        
+        <h3>Primary Purpose</h3>
+        <p>We use your data <strong>exclusively</strong> to:</p>
+        <ul>
+            <li>Calculate and display folder sizes in Google Drive</li>
+            <li>Cache results locally to improve performance</li>
+            <li>Provide the core functionality of the extension</li>
+        </ul>
 
-### Google Drive Data
-- **Folder IDs:** Unique identifiers of folders in your Google Drive
-- **File metadata:** File sizes, folder structure information
-- **Authentication tokens:** Temporary access tokens to communicate with Google Drive API
+        <div class="limited-use">
+            <h3>Limited Use Compliance</h3>
+            <p><strong>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</strong></p>
+        </div>
 
-### Local Storage Data
-- **Calculated folder sizes:** Cached results to improve performance
-- **User preferences:** Extension settings and configuration
-- **Session data:** Temporary data during active use
+        <p>We strictly limit our use of your data to:</p>
+        <ul>
+            <li>Providing the folder size calculation service</li>
+            <li>Improving the extension's performance through local caching</li>
+            <li>No other purposes beyond the stated functionality</li>
+        </ul>
 
-## How We Use Your Data
+        <h2>Data Storage and Security</h2>
+        
+        <h3>Local Storage</h3>
+        <ul>
+            <li>All calculated folder sizes are stored locally in your browser</li>
+            <li>No data is transmitted to external servers (except Google's APIs)</li>
+            <li>Cache data is encrypted and secured within Chrome's storage system</li>
+        </ul>
 
-### Primary Purpose
-We use your data **exclusively** to:
-- Calculate and display folder sizes in Google Drive
-- Cache results locally to improve performance
-- Provide the core functionality of the extension
+        <h3>Security Measures</h3>
+        <ul>
+            <li>All communications with Google APIs use HTTPS encryption</li>
+            <li>Authentication tokens are handled securely and automatically refreshed</li>
+            <li>No permanent storage of sensitive authentication data</li>
+        </ul>
 
-### Limited Use Compliance
-**The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.**
+        <h2>Data Sharing and Transfer</h2>
+        
+        <div class="do-not">
+            <h3>We DO NOT:</h3>
+            <ul>
+                <li>Sell, transfer, or share your data with third parties</li>
+                <li>Use your data for advertising or marketing purposes</li>
+                <li>Transfer data to data brokers or information resellers</li>
+                <li>Use data to determine creditworthiness or for lending purposes</li>
+            </ul>
+        </div>
 
-We strictly limit our use of your data to:
-- Providing the folder size calculation service
-- Improving the extension's performance through local caching
-- No other purposes beyond the stated functionality
+        <h3>Limited Exceptions:</h3>
+        <p>Data may only be accessed or transferred in these specific circumstances:</p>
+        <ul>
+            <li><strong>Legal compliance:</strong> When required by applicable law or legal process</li>
+            <li><strong>Security purposes:</strong> To investigate abuse or security threats</li>
+            <li><strong>User consent:</strong> With your explicit prior consent for specific purposes</li>
+        </ul>
 
-## Data Storage and Security
+        <h2>Google API Usage</h2>
+        
+        <h3>API Scopes</h3>
+        <p>This extension uses the following Google API scope:</p>
+        <ul>
+            <li><code>https://www.googleapis.com/auth/drive.readonly</code> - Read-only access to your Google Drive</li>
+        </ul>
 
-### Local Storage
-- All calculated folder sizes are stored locally in your browser
-- No data is transmitted to external servers (except Google's APIs)
-- Cache data is encrypted and secured within Chrome's storage system
+        <h3>Data Minimization</h3>
+        <ul>
+            <li>We only request the minimum permissions necessary for functionality</li>
+            <li>We only access folder and file metadata required for size calculations</li>
+            <li>We do not access file contents, only metadata</li>
+        </ul>
 
-### Security Measures
-- All communications with Google APIs use HTTPS encryption
-- Authentication tokens are handled securely and automatically refreshed
-- No permanent storage of sensitive authentication data
+        <h2>User Rights and Controls</h2>
+        
+        <h3>Your Controls</h3>
+        <ul>
+            <li><strong>Extension Toggle:</strong> Enable/disable the extension at any time</li>
+            <li><strong>Cache Management:</strong> Clear cached data through the extension popup</li>
+            <li><strong>Account Management:</strong> Disconnect your Google account and revoke permissions</li>
+            <li><strong>Uninstall:</strong> Remove the extension completely to delete all local data</li>
+        </ul>
 
-## Data Sharing and Transfer
+        <h3>Data Retention</h3>
+        <ul>
+            <li>Cached folder sizes are retained until manually cleared or extension is uninstalled</li>
+            <li>Authentication tokens are automatically refreshed and expire regularly</li>
+            <li>No long-term data retention beyond active use</li>
+        </ul>
 
-### We DO NOT:
-- Sell, transfer, or share your data with third parties
-- Use your data for advertising or marketing purposes
-- Transfer data to data brokers or information resellers
-- Use data to determine creditworthiness or for lending purposes
+        <h2>Children's Privacy</h2>
+        <p>This extension is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.</p>
 
-### Limited Exceptions:
-Data may only be accessed or transferred in these specific circumstances:
-- **Legal compliance:** When required by applicable law or legal process
-- **Security purposes:** To investigate abuse or security threats
-- **User consent:** With your explicit prior consent for specific purposes
+        <h2>International Users</h2>
+        <p>This extension may be used globally. By using the extension, you consent to the transfer and processing of your data in accordance with this Privacy Policy and applicable laws.</p>
 
-## Google API Usage
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy periodically. When we do:</p>
+        <ul>
+            <li>We will update the "Last Updated" date at the top</li>
+            <li>Significant changes will be communicated through the extension interface</li>
+            <li>Your continued use constitutes acceptance of the updated policy</li>
+        </ul>
 
-### API Scopes
-This extension uses the following Google API scope:
-- `https://www.googleapis.com/auth/drive.readonly` - Read-only access to your Google Drive
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <p>For questions about this Privacy Policy or data practices:</p>
+            <ul>
+                <li><strong>Developer:</strong> Raffaello / SilverStudioDM</li>
+                <li><strong>Email:</strong> silverstudiodm@gmail.com</li>
+                <li><strong>Support:</strong> Available through Chrome Web Store extension page</li>
+            </ul>
+        </div>
 
-### Data Minimization
-- We only request the minimum permissions necessary for functionality
-- We only access folder and file metadata required for size calculations
-- We do not access file contents, only metadata
+        <h2>Legal Compliance</h2>
+        <p>This Privacy Policy complies with:</p>
+        <ul>
+            <li>Google Chrome Web Store Developer Program Policies</li>
+            <li>Google API Services User Data Policy</li>
+            <li>Applicable data protection laws including GDPR, CCPA, and other regional regulations</li>
+        </ul>
 
-## User Rights and Controls
+        <h2>Technical Implementation</h2>
+        
+        <h3>Data Flow</h3>
+        <ol>
+            <li>User authenticates with Google account</li>
+            <li>Extension requests read-only access to Google Drive</li>
+            <li>Folder size calculations performed using Google Drive API</li>
+            <li>Results cached locally for performance</li>
+            <li>No external data transmission except to Google APIs</li>
+        </ol>
 
-### Your Controls
-- **Extension Toggle:** Enable/disable the extension at any time
-- **Cache Management:** Clear cached data through the extension popup
-- **Account Management:** Disconnect your Google account and revoke permissions
-- **Uninstall:** Remove the extension completely to delete all local data
+        <h3>Encryption</h3>
+        <ul>
+            <li>All API communications use TLS/SSL encryption</li>
+            <li>Local storage uses Chrome's secure storage mechanisms</li>
+            <li>No plain-text storage of sensitive information</li>
+        </ul>
 
-### Data Retention
-- Cached folder sizes are retained until manually cleared or extension is uninstalled
-- Authentication tokens are automatically refreshed and expire regularly
-- No long-term data retention beyond active use
+        <hr>
 
-## Children's Privacy
+        <div class="highlight">
+            <h2>Limited Use Disclosure</h2>
+            <p><strong>Important:</strong> The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements. This extension's use of Google user data is limited to providing and improving the folder size calculation feature as described in this Privacy Policy.</p>
+        </div>
 
-This extension is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.
-
-## International Users
-
-This extension may be used globally. By using the extension, you consent to the transfer and processing of your data in accordance with this Privacy Policy and applicable laws.
-
-## Changes to This Policy
-
-We may update this Privacy Policy periodically. When we do:
-- We will update the "Last Updated" date at the top
-- Significant changes will be communicated through the extension interface
-- Your continued use constitutes acceptance of the updated policy
-
-## Contact Information
-
-For questions about this Privacy Policy or data practices:
-
-- **Developer:** Raffaello / SilverStudioDM
-- **Email:** silverstudiodm@gmail.com
-- **Support:** Available through Chrome Web Store extension page
-
-## Legal Compliance
-
-This Privacy Policy complies with:
-- Google Chrome Web Store Developer Program Policies
-- Google API Services User Data Policy
-- Applicable data protection laws including GDPR, CCPA, and other regional regulations
-
-## Technical Implementation
-
-### Data Flow
-1. User authenticates with Google account
-2. Extension requests read-only access to Google Drive
-3. Folder size calculations performed using Google Drive API
-4. Results cached locally for performance
-5. No external data transmission except to Google APIs
-
-### Encryption
-- All API communications use TLS/SSL encryption
-- Local storage uses Chrome's secure storage mechanisms
-- No plain-text storage of sensitive information
-
----
-
-## Limited Use Disclosure
-
-**Important:** The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements. This extension's use of Google user data is limited to providing and improving the folder size calculation feature as described in this Privacy Policy.
-
----
-
-*This Privacy Policy is effective as of the date listed above and applies to all users of the Drive Folder Size Extension.*
+        <div class="footer">
+            This Privacy Policy is effective as of the date listed above and applies to all users of the Drive Folder Size Extension.
+        </div>
+    </div>
 </body>
 </html>
